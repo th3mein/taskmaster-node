@@ -1,6 +1,6 @@
 import { add } from "../src/utils";
 
-jest.mock("../src/config", () => ({
+jest.mock("../src/config/config", () => ({
   debug: true,
 }));
 it("add 1 + 2 to equal to 3", () => {

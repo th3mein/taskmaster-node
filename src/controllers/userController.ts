@@ -117,7 +117,7 @@ const deleteUser = async (req: Request, res: Response): Promise<void> => {
   // Does the user still have assigned notes?
   const note = await Note.findOne({ user: id }).lean().exec();
   if (note) {
-    res.status(400).json({ message: "User has assigned notes" });
+    res.status(400).json({ message: "User has assigned tickets" });
     return;
   }
   // Does the user exist to delete?

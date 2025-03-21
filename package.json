@@ -24,6 +24,7 @@
     "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.13.10",
+    "@types/node-cron": "^3.0.11",
     "@types/supertest": "^6.0.2",
     "copyfiles": "^2.4.1",
     "dotenv-cli": "^8.0.0",
@@ -43,6 +44,7 @@
     "typescript-eslint": "^8.26.0"
   },
   "dependencies": {
+    "axios": "^1.8.3",
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -53,6 +55,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.12.1",
     "mongoose-sequence": "^6.0.1",
+    "node-cron": "^3.0.3",
     "uuid": "^11.1.0"
   }
 }

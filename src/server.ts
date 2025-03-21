@@ -21,7 +21,7 @@ connectDB();
 
 export const app = express();
 
-app.use(logger);
+// app.use(logger);
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
@@ -58,3 +58,16 @@ mongoose.connection.on("error", (err) => {
     "mongoErrLog.log"
   );
 });
+
+//////cron
+// import cron from "node-cron";
+// import axios from "axios";
+
+// cron.schedule("*/5 * * * *", async () => {
+//   try {
+//     const response = await axios.get("h");
+//     console.log(`Health check response: ${response.status}`);
+//   } catch (error) {
+//     console.error(`Health check error: ${(error as Error).message as string}`);
+//   }
+// });

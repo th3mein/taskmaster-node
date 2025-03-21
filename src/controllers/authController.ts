@@ -20,14 +20,14 @@ const login = async (req: Request, res: Response): Promise<void> => {
   const foundUser = await User.findOne({ username }).exec();
 
   if (!foundUser || !foundUser.active) {
-    res.status(401).json({ message: "Unauthorized" });
+    res.status(401).json({ message: "User not found." });
     return;
   }
 
   const match = await foundUser.comparePassword(password);
 
   if (!match) {
-    res.status(401).json({ message: "Unauthorized" });
+    res.status(401).json({ message: "Username/Password do not match." });
     return;
   }
 

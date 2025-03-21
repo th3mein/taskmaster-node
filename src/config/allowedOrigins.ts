@@ -1,6 +1,3 @@
-const allowedOrigins = [
-  "https://www.taskmaster2500.com",
-  "https://taskmaster2500.com",
-];
+const allowedOrigins = ["https://th3mein.github.io"];
 
 export { allowedOrigins };

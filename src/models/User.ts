@@ -22,7 +22,7 @@ const UserSchema: Schema = new Schema(
     },
     roles: {
       type: [String],
-      default: ["Employee"],
+      default: ["employee"],
     },
     active: {
       type: Boolean,
